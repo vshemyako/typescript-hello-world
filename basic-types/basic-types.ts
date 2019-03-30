@@ -20,7 +20,7 @@ enum Planet {
 let earth: Planet = Planet.EARTH;
 let pluto: Planet = Planet.PLUTO;
 
-// any
+// any 
 let miscellaneous: any[] = [1, "one", true];
 
 // type assertion
