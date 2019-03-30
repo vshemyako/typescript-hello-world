@@ -1,6 +1,11 @@
-function greeter(name: string): string {
-    return `Hello, ${name}`;
+import {Person} from "./i-person";
+
+function greeter(person: Person): string {
+    return `Hello, ${person.firstName} ${person.lastName}`;
 }
 
-let user = 'Harry Potter';
+let user: Person = {
+    firstName: "Harry",
+    lastName: "Potter"
+};
 document.body.innerHTML = greeter(user);
