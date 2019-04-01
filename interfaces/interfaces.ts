@@ -15,10 +15,10 @@ let newsArticle = {
 printMessage(newsArticle);
 
 // names are given only once
-interface Human {
+interface HumanInterface {
     readonly firstName: string,
     readonly lastName: string
 }
 
-let human: Human = {firstName: "Sanches", lastName: "Shem"};
-human.firstName = "Sasha"; // cannot assign - readonly property
+let human: HumanInterface = {firstName: "Sanches", lastName: "Shem"};
+// human.firstName = "Sasha"; // cannot assign - readonly property
